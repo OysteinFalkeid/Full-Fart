@@ -1,0 +1,8 @@
+.fb-events-container {
+  max-width: 500px;
+  margin: 0 auto; /* center on page */
+}
+
+.fb-events-container iframe {
+  width: 100%;
+}
