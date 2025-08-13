@@ -1,0 +1,95 @@
+
+.calendar {
+  display: grid;
+  grid-template-columns: 80px repeat(7, 1fr);
+  border: 1px solid var(--secondary-color);
+  background: var(--card-bg);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.calendar-header {
+  background: var( --primary-color);
+  color: var(--card-bg);
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.calendar-time {
+  background: var(--bg-color);
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.calendar-cell {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  background: var(--card-bg);
+}
+
+.workout {
+  background: var( --primary-color);
+  color: var(--card-bg);
+  cursor: pointer;
+  /* transition: background 0.3s ease; */
+}
+
+.workout:hover {
+  background: var(--secondary-color);
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+.workout-schedule {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.workout-schedule h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.workout-schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.workout-schedule li {
+  background: var(--primary-color);
+  color: var(--card-bg);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  position: relative;
+  /* transition: background 0.3s ease; */
+}
+
+.workout-schedule li::before {
+  content: "•";
+  color: var(--card-bg);
+  font-size: 1.5em;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.workout-schedule li:hover {
+  background: var(--secondary-color);
+}
+
+.day {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.time {
+  font-style: italic;
+}
+

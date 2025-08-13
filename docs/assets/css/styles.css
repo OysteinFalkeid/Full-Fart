@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #f29d35;
-    --secondary-color: #b36f1f;
-    --complementary-color: #356FF2;
-    --accent-color: #356FF2;
+    --primary-color: #356FF2;
+    --secondary-color: #1e4ec7;
+    --complementary-color: #f29d35;
+    --secondary-complementary-color: #b36f1f;
+    --accent-color: #f29d35;
     --text-color: #333;
     --bg-color: #f8f9fa;
     --card-bg: #ffffff;
@@ -22,8 +23,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 p {
